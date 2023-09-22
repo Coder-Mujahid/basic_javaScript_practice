@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>event handling practice</title>
+
+</head>
+<body class="w-full h-[100vh] text-white text-1xl font-semibold bg-slate-600 flex items-center justify-center gap-5">
+
+        <button class="btn bg-lime-200" onclick="document.body.style.background='red'">Event button red</button> 
+
+
+    <button class="btn bg-lime-200" onclick="bgchange()">Event button green</button> 
+
+
+    <button class="btn bg-lime-200" id="btn">Event button blue</button> 
+
+    <input id="btn1" type="checkbox" class="toggle madari" />
+
+
+    <script>
+        function bgchange(){
+            document.body.style.background='green';
+        }
+
+        const data=document.getElementById('btn');
+        console.log(data);
+        data.onclick=output;
+        function output(){
+            document.body.style.background='blue'
+        }
+        
+
+        const data2=document.getElementById('btn1')
+        // const data2=document.getElementsByClassName('madari') এটা ব্যবহার করা যাবে না ,আইডি দিয়েই ধরা লাগবে css ফ্রেমওয়ার্ক গুলোকে
+        console.log(data2);
+        data2.onclick=call;
+        function call(){
+            document.body.style.background='black'
+        }
+
+
+    </script>
+</body>
+</html>
