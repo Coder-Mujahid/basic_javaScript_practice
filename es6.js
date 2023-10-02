@@ -119,7 +119,7 @@
 //         roll:400314,
 //         age:22,
 //         year:2023
-    
+
 //     }
 
 // for(var i in data){
@@ -165,4 +165,51 @@
 
 // const foreach=(data.forEach(i=>console.log(i)))
 // console.log(foreach);
+
+// reduse--------------------------------
+
+// const arr=[1,2,3,4,5,6]
+// // reduse method without function
+// console.log(arr.reduce((a , b)=> a+b,0));
+
+// // reduse methode with function
+// console.log(arr.reduce(add));
+// function add(a,b){
+//     return a+b;
+// }
+
+// filter----------------------------------
+
+// filter method without function
+// const arr=[1,2,3,4,5,6,7,8,9]
+// // console.log(arr.filter(i=>i>5));
+
+// // filter method with function
+// console.log(arr.filter(filterf));
+// function filterf(i){
+//     return i>5;
+// }
+
+
+// find-------------------------------------
+
+// // find method without function
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// console.log(arr.find(i => i > 2));
+
+// // find method with function
+// console.log(arr.find(findf));
+// function findf(i){
+//     return i>5;
+// }
+
+// ternary operator js---------------------
+// // ternary operator with function
+// var i='mujahid';
+// function ternary(i){
+//     return (i ? 'mujahid':'false');
+// }
+// console.log(ternary(i));
+// // ternary operator with function
+// console.log(i ? 'mujahid':'false');
 
